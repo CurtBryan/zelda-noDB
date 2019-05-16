@@ -1,0 +1,12 @@
+.naviTiles {
+  height: 70vh;
+  width: 20vw;
+  background-color: springgreen;
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

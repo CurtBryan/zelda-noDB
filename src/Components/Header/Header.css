@@ -1,0 +1,16 @@
+.mainHeader {
+  background-color: aquamarine;
+  max-width: 1920px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  height: 8vh;
+}
+
+.title {
+  font-size: 50px;
+}
