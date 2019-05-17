@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import "./Games.css";
+import Comments from "../Comments/Comments";
 
-export default function() {
-  return <div className="gamesComments" />;
+export default class Games extends Component {
+  render() {
+    return (
+      <div className="gamesComments">
+        <div>
+          <Comments />
+        </div>
+      </div>
+    );
+  }
 }

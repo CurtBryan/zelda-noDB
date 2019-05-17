@@ -10,16 +10,16 @@ export default class NaviTiles extends Component {
   render() {
     return (
       <div className="naviTiles">
-        <ul className="buttons">
-          <li>The Legend of Zelda - NES</li>
-          <li>The Legend of Zelda: Link's Adventure - NES</li>
-          <li>The Legend of Zelda: A Link to the Past - SNES</li>
-          <li>The Legend of Zelda: Link's Awakening - GB</li>
-          <li>The Legend of Zelda: Ocarina of Time - N64</li>
-          <li>The Legend of Zelda: Majora's Mask - N64</li>
-          <li>The Legend of Zelda: Oracle of Seasons/Ages - GBC</li>
-          <li>The Legend of Zelda: Wind Waker - GC</li>
-        </ul>
+        <div className="buttons">
+          <button>The Legend of Zelda - NES</button>
+          <button>The Legend of Zelda: Link's Adventure - NES</button>
+          <button>The Legend of Zelda: A Link to the Past - SNES</button>
+          <button>The Legend of Zelda: Link's Awakening - GB</button>
+          <button>The Legend of Zelda: Ocarina of Time - N64</button>
+          <button>The Legend of Zelda: Majora's Mask - N64</button>
+          <button>The Legend of Zelda: Oracle of Seasons/Ages - GBC</button>
+          <button>The Legend of Zelda: Wind Waker - GC</button>
+        </div>
       </div>
     );
   }
