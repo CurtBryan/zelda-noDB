@@ -6,6 +6,7 @@ export default class Games extends Component {
   render() {
     return (
       <div className="gamesComments">
+        <div className="gameBox" />
         <div>
           <Comments />
         </div>

@@ -27,7 +27,7 @@ module.exports = {
   },
   deleteComment: (req, res, next) => {
     const { id } = req.params;
-    const { delete_comment } = req.query;
+    // const { delete_comment } = req.query;
     const index = comments.findIndex(element => {
       return element.id == id;
     });
