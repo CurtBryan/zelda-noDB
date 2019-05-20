@@ -6,9 +6,9 @@ export default function Header() {
   return (
     <div>
       <header className="mainHeader">
-        <img className="triforceL" src={triforceIcon} />
+        <img alt="triforce" className="triforceL" src={triforceIcon} />
         <h1 className="title"> Legend of Zelda </h1>
-        <img className="triforceR" src={triforceIcon} />
+        <img alt="triforce" className="triforceR" src={triforceIcon} />
       </header>
     </div>
   );

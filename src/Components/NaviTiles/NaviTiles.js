@@ -11,8 +11,6 @@ export default class NaviTiles extends Component {
       gameShown: []
     };
     this.handleChangeOne = this.handleChangeOne.bind(this);
-    // this.handleChangeTwo = this.handleChangeTwo.bind(this);
-    // console.log(this.state.id);
   }
 
   componentDidMount() {
@@ -23,36 +21,18 @@ export default class NaviTiles extends Component {
     });
   }
 
-  // componentWillMount() {
-  //   this.handleChangeOne();
-  // }
-
   handleChangeOne(game) {
     this.setState({
       gameShown: game
     });
   }
-  // handleChangeTwo() {
-  //   this.setState(
-  //     {
-  //       id: 2
-  //     },
-  //     console.log(this.state.id)
-  //   );
-  // }
 
   render() {
     const { games } = this.state;
-    // const {}
     return (
       <div className="naviTiles">
         <div className="buttons">
-          <button
-            onClick={
-              () => this.handleChangeOne(games[0]) //
-              // console.log(this.handleChangeOne(games[0]))
-            }
-          >
+          <button onClick={() => this.handleChangeOne(games[0])}>
             The Legend of Zelda - NES
           </button>
           <button onClick={() => this.handleChangeOne(games[1])}>
@@ -76,7 +56,6 @@ export default class NaviTiles extends Component {
           <button onClick={() => this.handleChangeOne(games[7])}>
             The Legend of Zelda: Wind Waker - GC
           </button>
-          {console.log(this.state.gameShown)}
         </div>
         <section>
           <Games gameShown={this.state.gameShown} />

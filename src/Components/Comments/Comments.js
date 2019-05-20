@@ -17,11 +17,16 @@ export default class Comments extends Component {
   }
 
   componentDidMount() {
-    axios.get(`/api/messages`).then(response => {
-      this.setState({
-        Comments: response.data
+    axios
+      .get(`/api/comments`)
+      .then(response => {
+        this.setState({
+          Comments: response.data
+        });
+      })
+      .catch(error => {
+        console.log(error);
       });
-    });
   }
 
   deletePost(id) {
@@ -63,18 +68,13 @@ export default class Comments extends Component {
   render() {
     const { Comments, updatedComment } = this.state;
     const mappedcomments = Comments.map(element => {
-      console.log(element, element.id);
       return (
         <div key={element.id} className="comments">
-          {/* <div>{element.id}</div> */}
           <div className="comment">
             Name:
             {element.userName}
           </div>
-          <div>
-            Comment:
-            {element.comment}
-          </div>
+          <div>Comment: {element.comment}</div>
           <div>
             <button onClick={() => this.editPost(element.id, updatedComment)}>
               Edit Post
@@ -95,7 +95,7 @@ export default class Comments extends Component {
       <div>
         <Comment
           postCommentToPage={this.postCommentToPage}
-          //   editComment={this.editComment}
+          gameShown={this.props.gameShown}
         />
         <hr />
         {mappedcomments}

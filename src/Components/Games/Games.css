@@ -31,7 +31,7 @@
 
 h1 {
   font-size: 60px;
-  color: gold;
+  color: springgreen;
   text-shadow: 2px 2px 4px black;
   font-family: "Architects Daughter", cursive;
 }
@@ -39,7 +39,7 @@ h1 {
 h2 {
   font-family: "Press Start 2P", cursive;
   font-size: 30px;
-  color: gold;
+  color: springgreen;
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -54,4 +54,5 @@ h2 {
 
 p {
   margin-left: 5px;
+  font-family: Bangers, cursive;
 }
