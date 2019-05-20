@@ -44,7 +44,6 @@ export default class Comments extends Component {
   }
 
   postCommentToPage(gameCommentedOn, newComment, name) {
-    // console.log(gameName, Comment);
     let userName = "userName";
     let comment = "comment";
     let gameName = "gameName";

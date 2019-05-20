@@ -16,6 +16,7 @@ export default class Comment extends Component {
     return (
       <div>
         <input
+          placeholder="Game Name"
           onChange={e =>
             this.setState({
               name: e.target.value
@@ -24,6 +25,7 @@ export default class Comment extends Component {
           value={name}
         />
         <input
+          placeholder="Comment"
           onChange={e =>
             this.setState({
               gameCommentedOn: e.target.value
@@ -32,6 +34,7 @@ export default class Comment extends Component {
           value={gameCommentedOn}
         />
         <input
+          placeholder="User Name"
           onChange={e =>
             this.setState({
               newComment: e.target.value

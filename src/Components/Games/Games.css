@@ -1,5 +1,46 @@
 .gamesComments {
-  background-color: tomato;
   height: 90vh;
   width: 80vw;
+}
+
+.firstInfo {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.gamePicture {
+  height: 60vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.coverArt {
+  margin: 10px;
+  height: 50vh;
+}
+
+.gameBox {
+  display: flex;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.gameInfo {
+  display: flex;
+}
+
+p {
+  margin-left: 5px;
 }
