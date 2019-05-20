@@ -12,7 +12,7 @@ function App() {
       <Header />
       <div className="main">
         <NaviTiles />
-        <Games />
+        {/* <Games /> */}
       </div>
     </div>
   );

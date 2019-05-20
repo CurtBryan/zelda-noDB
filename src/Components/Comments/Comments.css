@@ -1,0 +1,10 @@
+.comments {
+  /* background-color: aquamarine; */
+  height: 13vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  text-shadow: 2px 2px 4px black;
+}

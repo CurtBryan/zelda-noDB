@@ -7,7 +7,7 @@ export default function Header() {
     <div>
       <header className="mainHeader">
         <img className="triforceL" src={triforceIcon} />
-        <h1 className="title"> Legend of Zelda Database </h1>
+        <h1 className="title"> Legend of Zelda </h1>
         <img className="triforceR" src={triforceIcon} />
       </header>
     </div>

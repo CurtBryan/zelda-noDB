@@ -31,14 +31,25 @@
 
 h1 {
   font-size: 60px;
+  color: gold;
+  text-shadow: 2px 2px 4px black;
+  font-family: "Architects Daughter", cursive;
 }
 
 h2 {
+  font-family: "Press Start 2P", cursive;
   font-size: 30px;
+  color: gold;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .gameInfo {
   display: flex;
+  width: 50vw;
+  font-size: 18px;
+  background-color: rgba(14, 12, 4, 0.164);
+  color: aliceblue;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 p {

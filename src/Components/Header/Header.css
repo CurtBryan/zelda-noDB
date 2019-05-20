@@ -1,5 +1,9 @@
 .mainHeader {
-  background-color: aquamarine;
+  background-image: linear-gradient(
+    rgba(128, 128, 128, 0.521),
+    rgba(37, 36, 36, 0.534),
+    rgba(0, 0, 0, 0.603)
+  );
   max-width: 1920px;
   height: 10vh;
   display: flex;

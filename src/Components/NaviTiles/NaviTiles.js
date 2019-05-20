@@ -26,9 +26,6 @@ export default class NaviTiles extends Component {
   // componentWillMount() {
   //   this.handleChangeOne();
   // }
-  // componentWillMount() {
-  //   this.handleChangeTwo();
-  // }
 
   handleChangeOne(game) {
     this.setState({
@@ -51,22 +48,39 @@ export default class NaviTiles extends Component {
       <div className="naviTiles">
         <div className="buttons">
           <button
-          // onClick={() =>
-          //this.handleChangeOne(games[0])//
-          // console.log(this.handleChangeOne(games[0]))
-          // }
+            onClick={
+              () => this.handleChangeOne(games[0]) //
+              // console.log(this.handleChangeOne(games[0]))
+            }
           >
             The Legend of Zelda - NES
           </button>
-          <button>The Legend of Zelda: Link's Adventure - NES</button>
-          <button>The Legend of Zelda: A Link to the Past - SNES</button>
-          <button>The Legend of Zelda: Link's Awakening - GB</button>
-          <button>The Legend of Zelda: Ocarina of Time - N64</button>
-          <button>The Legend of Zelda: Majora's Mask - N64</button>
-          <button>The Legend of Zelda: Oracle of Seasons/Ages - GBC</button>
-          <button>The Legend of Zelda: Wind Waker - GC</button>
+          <button onClick={() => this.handleChangeOne(games[1])}>
+            The Legend of Zelda: Link's Adventure - NES
+          </button>
+          <button onClick={() => this.handleChangeOne(games[2])}>
+            The Legend of Zelda: A Link to the Past - SNES
+          </button>
+          <button onClick={() => this.handleChangeOne(games[3])}>
+            The Legend of Zelda: Link's Awakening - GB
+          </button>
+          <button onClick={() => this.handleChangeOne(games[4])}>
+            The Legend of Zelda: Ocarina of Time - N64
+          </button>
+          <button onClick={() => this.handleChangeOne(games[5])}>
+            The Legend of Zelda: Majora's Mask - N64
+          </button>
+          <button onClick={() => this.handleChangeOne(games[6])}>
+            The Legend of Zelda: Oracle of Seasons/Ages - GBC
+          </button>
+          <button onClick={() => this.handleChangeOne(games[7])}>
+            The Legend of Zelda: Wind Waker - GC
+          </button>
           {console.log(this.state.gameShown)}
         </div>
+        <section>
+          <Games gameShown={this.state.gameShown} />
+        </section>
       </div>
     );
   }

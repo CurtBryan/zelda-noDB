@@ -66,7 +66,7 @@ export default class Comments extends Component {
       console.log(element, element.id);
       return (
         <div key={element.id} className="comments">
-          <div>{element.id}</div>
+          {/* <div>{element.id}</div> */}
           <div className="comment">
             Name:
             {element.userName}
@@ -74,6 +74,8 @@ export default class Comments extends Component {
           <div>
             Comment:
             {element.comment}
+          </div>
+          <div>
             <button onClick={() => this.editPost(element.id, updatedComment)}>
               Edit Post
             </button>
